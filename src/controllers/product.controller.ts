@@ -21,6 +21,8 @@ const productController = (req: IncomingMessage, res: ServerResponse) => {
         }))
     }
 
+
+    
     else if(method === "GET" && id !== null) {
         const products = productService()
         const product = products.find((p: IProduct) => p.id === id)

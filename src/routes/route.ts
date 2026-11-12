@@ -11,7 +11,6 @@ const routeHandler = (req: IncomingMessage, res: ServerResponse) => {
         res.end(JSON.stringify({message: "This is root route"}))
     }
     else if(url?.startsWith("/products")){
-        // console.log("This is root route")
         productController(req,res)
     }
     else{
